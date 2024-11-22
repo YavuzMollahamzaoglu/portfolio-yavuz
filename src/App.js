@@ -23,8 +23,8 @@ function App() {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_2qgbkck", "template_lte3m9t", form.current, {
-        publicKey: "H8-38dnDmAlxdAjnI",
+      .sendForm("service_pt9556p", "service_pt9556p", form.current, {
+        publicKey: "-dmN0MDvmqMBhT6CW",
       })
       .then(
         () => {
@@ -41,7 +41,7 @@ function App() {
   return (
     <div className="App scroll-smooth">
       <section className="" id="myself">
-        <nav className="dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 flex justify-center items-center text-center">
+        <nav className="dark:bg-gray-900 text-white fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 flex justify-center items-center text-center">
           <div className="w-full max-w-screen-xl flex flex-row items-center justify-center space-x-4 lg:space-x-12 p-4">
             <a
               href="#"
@@ -168,7 +168,7 @@ function App() {
                 Experience
               </h1>
               <a
-                href="#"
+                href=""
                 class="flex flex-col items-center hover:bg-gray-500 cursor-auto	 hover:bg-opacity-25 rounded-lg  md:flex-row md:max-w-xl hover:bg-gray-100 p-2  "
               >
                 <img
@@ -224,7 +224,7 @@ function App() {
                 </div>
               </a>
               <a
-                href="#"
+                href=""
                 class="flex flex-col items-center cursor-auto	   hover:bg-gray-500 hover:bg-opacity-25 rounded-lg  md:flex-row md:max-w-xl hover:bg-gray-100 p-2  "
               >
                 <img
@@ -268,7 +268,7 @@ function App() {
                 </div>
               </a>
               <a
-                href="#"
+                href=""
                 class="flex flex-col items-center  cursor-auto	  hover:bg-gray-500 hover:bg-opacity-25 rounded-lg  md:flex-row md:max-w-xl hover:bg-gray-100 p-2  "
               >
                 <img
@@ -352,7 +352,7 @@ function App() {
               My Projects
             </h1>
             <a
-              href="#"
+              href=""
               class="flex flex-col items-center cursor-auto  hover:bg-gray-500 hover:bg-opacity-25 rounded-lg  md:flex-row md:max-w-xl hover:bg-gray-100 p-2  "
             >
               <img
@@ -398,7 +398,7 @@ function App() {
               </div>
             </a>
             <a
-              href="#"
+              href=""
               class="flex flex-col items-center cursor-auto  hover:bg-gray-500 hover:bg-opacity-25 rounded-lg  md:flex-row md:max-w-xl hover:bg-gray-100 p-2  "
             >
               <img
@@ -445,7 +445,7 @@ function App() {
               </div>
             </a>
             <a
-              href="#"
+              href=""
               class="flex flex-col items-center  cursor-auto  hover:bg-gray-500 hover:bg-opacity-25 rounded-lg  md:flex-row md:max-w-xl hover:bg-gray-100 p-2  "
             >
               <img
@@ -486,7 +486,7 @@ function App() {
               </div>
             </a>
             <a
-              href="#"
+              href=""
               class="flex flex-col items-center cursor-auto  hover:bg-gray-500 hover:bg-opacity-25 rounded-lg  md:flex-row md:max-w-xl hover:bg-gray-100 p-2 mb-2  "
             >
               <img
