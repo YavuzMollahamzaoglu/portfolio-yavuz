@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/portfolio-yavuz/static/css/main.91e590ee.css",
+    "main.js": "/portfolio-yavuz/static/js/main.190260ad.js",
+    "static/js/845.185071e5.chunk.js": "/portfolio-yavuz/static/js/845.185071e5.chunk.js",
+    "index.html": "/portfolio-yavuz/index.html",
+    "main.91e590ee.css.map": "/portfolio-yavuz/static/css/main.91e590ee.css.map",
+    "main.190260ad.js.map": "/portfolio-yavuz/static/js/main.190260ad.js.map",
+    "845.185071e5.chunk.js.map": "/portfolio-yavuz/static/js/845.185071e5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.91e590ee.css",
+    "static/js/main.190260ad.js"
+  ]
+}
