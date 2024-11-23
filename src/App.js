@@ -168,7 +168,7 @@ function App() {
                 Experience
               </h1>
               <a
-                href=""
+                href="#?"
                 class="flex flex-col items-center hover:bg-gray-500 cursor-auto	 hover:bg-opacity-25 rounded-lg  md:flex-row md:max-w-xl hover:bg-gray-100 p-2  "
               >
                 <img
@@ -224,7 +224,7 @@ function App() {
                 </div>
               </a>
               <a
-                href=""
+                href="#?"
                 class="flex flex-col items-center cursor-auto	   hover:bg-gray-500 hover:bg-opacity-25 rounded-lg  md:flex-row md:max-w-xl hover:bg-gray-100 p-2  "
               >
                 <img
@@ -268,7 +268,7 @@ function App() {
                 </div>
               </a>
               <a
-                href=""
+                href="#?"
                 class="flex flex-col items-center  cursor-auto	  hover:bg-gray-500 hover:bg-opacity-25 rounded-lg  md:flex-row md:max-w-xl hover:bg-gray-100 p-2  "
               >
                 <img
@@ -352,7 +352,7 @@ function App() {
               My Projects
             </h1>
             <a
-              href=""
+              href="#?"
               class="flex flex-col items-center cursor-auto  hover:bg-gray-500 hover:bg-opacity-25 rounded-lg  md:flex-row md:max-w-xl hover:bg-gray-100 p-2  "
             >
               <img
@@ -398,7 +398,7 @@ function App() {
               </div>
             </a>
             <a
-              href=""
+              href="#?"
               class="flex flex-col items-center cursor-auto  hover:bg-gray-500 hover:bg-opacity-25 rounded-lg  md:flex-row md:max-w-xl hover:bg-gray-100 p-2  "
             >
               <img
@@ -445,7 +445,7 @@ function App() {
               </div>
             </a>
             <a
-              href=""
+              href="#?"
               class="flex flex-col items-center  cursor-auto  hover:bg-gray-500 hover:bg-opacity-25 rounded-lg  md:flex-row md:max-w-xl hover:bg-gray-100 p-2  "
             >
               <img
@@ -486,7 +486,7 @@ function App() {
               </div>
             </a>
             <a
-              href=""
+              href="#?"
               class="flex flex-col items-center cursor-auto  hover:bg-gray-500 hover:bg-opacity-25 rounded-lg  md:flex-row md:max-w-xl hover:bg-gray-100 p-2 mb-2  "
             >
               <img
