@@ -22,30 +22,49 @@ function App() {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    const formData = {
+      user_name: form.current["user_name"].value.trim(),
+      user_email: form.current["user_email"].value.trim(),
+      subject: form.current["subject"].value.trim(),
+      message: form.current["message"].value.trim(),
+    };
+
+    if (
+      !formData.user_name ||
+      !formData.user_email ||
+      !formData.subject ||
+      !formData.message
+    ) {
+      alert("Please fill all the blanks");
+      return;
+    }
+
     emailjs
-      .sendForm("service_pt9556p", "service_pt9556p", form.current, {
-        publicKey: "-dmN0MDvmqMBhT6CW",
-      })
+      .sendForm(
+        "service_pt9556p",
+        "template_r6v70ou",
+        form.current,
+        "-dmN0MDvmqMBhT6CW"
+      )
       .then(
         () => {
-          console.log("SUCCESS!");
+          alert("Message has been sent successfully");
+          form.current.reset();
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          console.error("Message sending failed:", error.text);
+          alert("Mesaj gönderilirken bir hata oluştu. Lütfen tekrar deneyin.");
         }
       );
-  };
-  const handleClick = () => {
-    alert("Message Send.");
   };
   return (
     <div className="App scroll-smooth">
       <section className="" id="myself">
-        <nav className="dark:bg-gray-900 text-white fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 flex justify-center items-center text-center">
+        <nav className="dark:bg-gray-900 text-white  fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 flex justify-center items-center text-center">
           <div className="w-full max-w-screen-xl flex flex-row items-center justify-center space-x-4 lg:space-x-12 p-4">
             <a
               href="#"
-              className="text-gray-900 dark:text-white hover:text-blue-700 dark:hover:text-blue-500 text-sm md:text-base lg:text-lg font-medium"
+              className="text-gray-900 dark:text-white hover:text-blue-700 dark:hover:text-blue-500 z-50 text-sm md:text-base lg:text-lg font-medium"
               aria-current="page"
             >
               Who am I
@@ -169,6 +188,50 @@ function App() {
               </h1>
               <a
                 href="#?"
+                class="flex flex-col items-center cursor-auto	   hover:bg-gray-500 hover:bg-opacity-25 rounded-lg  md:flex-row md:max-w-xl hover:bg-gray-100 p-2  "
+              >
+                <img
+                  class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                  className="tubitak"
+                  src="./alku.png"
+                  alt=""
+                ></img>
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                  <p class="mb-1 text-sm font-medium 	 text-gray-500 dark:text-gray-400">
+                    2024 November - Current
+                  </p>
+                  <h5 class="mb-2 text-2xl 	 font-bold tracking-tight text-gray-900 dark:text-white text-white">
+                    Alanya Aladdin Keykubat Universty, IT Asistant
+                  </h5>
+                  <p class="mb-3 font-normal text-gray-300">
+                    At my university's IT department, I primarily work on
+                    frontend-focused projects and contribute to team efforts. I
+                    mainly use HTML and CSS in my tasks.
+                  </p>
+                  <div className="flex  ">
+                    <button
+                      type="button"
+                      class="text-white cursor-auto	 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
+                    >
+                      HTML5
+                    </button>
+                    <button
+                      type="button"
+                      class="text-white cursor-auto	 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
+                    >
+                      CSS
+                    </button>
+                    <button
+                      type="button"
+                      class="text-white cursor-auto	 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
+                    >
+                      ReactJs
+                    </button>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="#?"
                 class="flex flex-col items-center hover:bg-gray-500 cursor-auto	 hover:bg-opacity-25 rounded-lg  md:flex-row md:max-w-xl hover:bg-gray-100 p-2  "
               >
                 <img
@@ -223,50 +286,7 @@ function App() {
                   </div>
                 </div>
               </a>
-              <a
-                href="#?"
-                class="flex flex-col items-center cursor-auto	   hover:bg-gray-500 hover:bg-opacity-25 rounded-lg  md:flex-row md:max-w-xl hover:bg-gray-100 p-2  "
-              >
-                <img
-                  class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-                  className="tubitak"
-                  src="./alku.png"
-                  alt=""
-                ></img>
-                <div class="flex flex-col justify-between p-4 leading-normal">
-                  <p class="mb-1 text-sm font-medium 	 text-gray-500 dark:text-gray-400">
-                    2024 November - Current
-                  </p>
-                  <h5 class="mb-2 text-2xl 	 font-bold tracking-tight text-gray-900 dark:text-white text-white">
-                    Alanya Aladdin Keykubat Universty, IT Asistant
-                  </h5>
-                  <p class="mb-3 font-normal text-gray-300">
-                    At my university's IT department, I primarily work on
-                    frontend-focused projects and contribute to team efforts. I
-                    mainly use HTML and CSS in my tasks.
-                  </p>
-                  <div className="flex  ">
-                    <button
-                      type="button"
-                      class="text-white cursor-auto	 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
-                    >
-                      HTML5
-                    </button>
-                    <button
-                      type="button"
-                      class="text-white cursor-auto	 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
-                    >
-                      CSS
-                    </button>
-                    <button
-                      type="button"
-                      class="text-white cursor-auto	 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
-                    >
-                      ReactJs
-                    </button>
-                  </div>
-                </div>
-              </a>
+
               <a
                 href="#?"
                 class="flex flex-col items-center  cursor-auto	  hover:bg-gray-500 hover:bg-opacity-25 rounded-lg  md:flex-row md:max-w-xl hover:bg-gray-100 p-2  "
@@ -575,7 +595,7 @@ function App() {
               >
                 <SwiperSlide>
                   <img
-                    className="slider-image"
+                    className="slider-image "
                     src="./certificate/bilgi.jpeg"
                   ></img>
                   <span className="flex justify-center text-white mt-2">
@@ -726,13 +746,13 @@ function App() {
                       for="user_name"
                       class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                     >
-                      Name
+                      Your name
                     </label>
                     <input
                       type="text"
                       name="user_name"
                       id="user_name"
-                      placeholder="Charles Babbage"
+                      placeholder="Elon Musk"
                       class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                       required
                     />
@@ -748,7 +768,7 @@ function App() {
                     <input
                       type="email"
                       name="user_email"
-                      placeholder="charlesbabbage@gmail.com"
+                      placeholder="örnek@gmail.com"
                       id="user_email"
                       class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                       required
@@ -767,7 +787,7 @@ function App() {
                       name="subject"
                       id="subject"
                       class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                      placeholder=""
+                      placeholder="Konunuz"
                       required
                     />
                   </div>
@@ -784,7 +804,7 @@ function App() {
                       name="message"
                       rows="6"
                       class="block p-2.5 w-full text-sm text-gray-300 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                      placeholder="Leave a comment..."
+                      placeholder="Mesajınızı buraya yazınız..."
                       required
                     ></textarea>
                   </div>
@@ -792,10 +812,9 @@ function App() {
                   <div class="flex justify-center">
                     <button
                       type="submit"
-                      onClick={handleClick}
-                      class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg sm:w-fit focus:ring-4 focus:outline-none bg-gray-700 hover:bg-gray-500"
+                      className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg sm:w-fit focus:ring-4 focus:outline-none bg-gray-700 hover:bg-gray-500"
                     >
-                      Send message
+                      Send
                     </button>
                   </div>
                 </form>
