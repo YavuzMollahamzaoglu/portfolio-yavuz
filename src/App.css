@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth; /* anchor links scroll smoothly */
+}
+
+/* Prevent anchors from hiding beneath fixed navbar */
+:where(section[id]){
+  scroll-margin-top: 80px; /* ~nav height */
+}
+
+/* Theme backgrounds */
+html.dark body{
+  background-color: #0b1220;
+}
+html:not(.dark) body{
+  background-color: #f5f7fb; /* light mode */
+}
+
+body{
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.navbar-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media-icons-white a{
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+html:not(.dark) .social-media-icons-white a{ color: #64748b; } /* slate-500 */
+html.dark .social-media-icons-white a{ color: #cbd5e1; } /* slate-300 */
+
+img{
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 15px;
+  object-fit: cover;
+}
+
+/* Profil fotoğrafı için sabit, taşmayan boyut */
+.profile-photo{
+  max-width: 320px;
+  max-height: 420px;
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+p{
+  max-width: 50ch;
+}
+
+/* Intro metni (isim, title ve aciklama) ortalama */
+.info-card{
+  align-items: center;
+  text-align: center;
+}
+
+.experience-cards{
+  margin-top: 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* kartlari ortala */
+  max-width: 720px; /* My Projects ile ayni genislik */
+  margin-inline: auto; /* ortala */
+}
+
+/* Sag kolon kartlari icin tutarli izgaralar ve ic bosluklar */
+.experience-cards a,
+#projects a {
+  width: 100%;
+  max-width: 720px; /* tum kartlar ayni genislikte */
+  padding: 12px; /* tutarli dis ic bosluk */
+}
+
+/* My Projects sag kolon genel genislik */
+/* My Projects sag kolon genel genislik */
+#projects .col-span-1{
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+/* Ortak sag kolon */
+.right-column{
+  max-width: 720px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.right-column a{
+  width: 100%;
+  max-width: 100%;
+}
+
+.experience-cards a .leading-normal,
+#projects a .leading-normal {
+  padding: 0; /* ic div zaten p-4 ile geliyor, CSS tarafinda normalize et */
+}
+
+/* Baslik, aciklama ve rozetlerin sol hiza cizgisi */
+.experience-cards a h5,
+.experience-cards a p,
+.experience-cards a .flex,
+#projects a h5,
+#projects a p,
+#projects a .flex {
+  margin-left: 0;
+}
+
+/* Kart icindeki baslik ve paragraflar arasi tutarli bosluklar */
+.experience-cards a h5,
+#projects a h5 {
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.experience-cards a p,
+#projects a p {
+  margin-bottom: 12px;
+}
+
+/* Rozet satiri icin tutarli aralik */
+.experience-cards a .flex button,
+#projects a .flex button {
+  margin-right: 8px;
+}
+
+/* Kart icindeki resimlerin sabit boyut ve hizasi */
+.experience-cards a img,
+#projects a img {
+  width: 192px;
+  height: 144px;
+  object-fit: contain;
+  margin-right: 16px; /* metin ile sabit aralik */
+}
+
+
+
+.experience-card{
+  margin-left:2px;
+ 
+}
+
+.huawei-pic{
+  width: 50%; /* Konteyner genişliğine uyum sağlar */
+  height: 50%; /* Konteyner yüksekliğine uyum sağlar */
+  object-fit: contain; /* Resmin tamamını gösterir */
+  object-position: top;
+}
+
+.tubitak{
+  /* Tum deneyim logolari icin ayni boyut */
+  width: 192px;
+  height: 192px;
+  object-fit: contain;
+  padding: 8px; /* logolara biraz bosluk */
+}
+
+.project-image{
+  width: 160px;
+  height: 120px;
+}
+
+
+.main-content{
+  flex: 1;
+}
+
+.mySwiper{
+  max-width: 720px;
+  max-height: 380px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-image{
+  width: 450px;
+  height: 270px;
+  object-fit: contain;
+}
+
+.swiper-pagination-fraction{
+  display: none;
+}
+
+.title{
+  margin-right: 0;
+  margin-bottom: 20px;
+  text-align: center; /* Tum bolum basliklarini ortala */
+}
+
+.title-certificate{
+  margin-right: 0;
+  margin-bottom: 20px;
+  text-align: center; /* Certificates basligini digerleriyle hizala */
+}
+
+
+
+/* Left hero column: sticky profil kartı */
+section#myself .hero-left,
+#experience .hero-left,
+#projects .hero-left,
+#certificate .hero-left,
+#contact-me .hero-left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Sticky wrapper minimum height */
+.lg\:sticky {
+  max-height: calc(100vh - 6rem);
+}
+
+/* Right column sections */
+.col-span-1 section{
+  scroll-margin-top: 80px;
+}
+
+#projects a .leading-normal{
+  text-align: center;
+}
+
+.contact-me{
+  max-width: 570px;
+}
+
+/* Tum bolum basliklarini ayni sol hizada gostermek icin */
+.contact-me h2{
+  text-align: center; /* align with other section titles */
+}
+
+/* Navbar modern layout - daha belirgin ve sik */
+nav{
+  backdrop-filter: blur(16px);
+  background: rgba(11, 18, 32, 0.95); /* dark */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Light mode text overrides for components that use text-white utility */
+html:not(.dark) .text-white { color: #0f172a !important; } /* slate-900 */
+html:not(.dark) .text-slate-200 { color: #334155 !important; } /* slate-600 */
+html:not(.dark) .text-gray-300 { color: #334155 !important; } /* slate-600 */
+
+/* Navbar links in light mode */
+html:not(.dark) nav a { color: #0f172a !important; }
+html:not(.dark) nav a:hover { color: #14b8a6 !important; } /* teal-500 */
+
+/* Softer theme transitions */
+html, body, nav, .info-card, .right-column, .experience-cards a, #projects a, .contact-me, .mySwiper {
+  transition: background-color 480ms ease-in-out, color 480ms ease-in-out, border-color 480ms ease-in-out, box-shadow 480ms ease-in-out, fill 480ms ease-in-out, stroke 480ms ease-in-out;
+}
+
+@media (max-width: 768px){
+  .info-card{
+    align-items: center;
+    text-align: center;
+  }
+
+  .experience-cards{
+    padding-inline: 1rem;
+  }
+
+  .title,
+  .title-certificate{
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .mySwiper{
+    max-width: 100%;
+  }
+
+  .contact-me{
+    max-width: 100%;
+  }
+}
+
+.exp{
+  cursor: auto;
+}
