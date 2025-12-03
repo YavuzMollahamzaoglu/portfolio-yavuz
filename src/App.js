@@ -14,8 +14,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 import { useRef, useEffect, useState } from "react";
-import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
-import emailjs from "@emailjs/browser";
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+// email sending removed per request
 
 function App() {
   // Theme (dark/light)
@@ -67,8 +67,8 @@ function App() {
         certs: "Certificates",
         contact: "Contact Me",
       },
-      subtitle: "Junior Front End Engineer",
-      tagline: "I create responsive and backend-supported projects.",
+      subtitle: "Junior Electrical-Electronics Engineer",
+      tagline: "Bridging hardware and software through full-stack development.",
       headings: {
         experience: "Experience",
         projects: "My Projects",
@@ -76,11 +76,10 @@ function App() {
         contact: "Contact Me",
       },
       about: [
-        "I’m a developer passionate about creating responsive and optimized digital experiences that merge innovative design with robust engineering. My work focuses on crafting user interfaces and backend solutions that are not only functional but also visually appealing and accessible.",
-        "Since beginning my programming journey in 2020, I have explored a wide range of technologies, starting with Python and algorithmic problem-solving in C++. Over the years, I’ve expanded my expertise to include both frontend and backend development. I specialize in Angular, React, Prisma, HTML5, and CSS, while also working extensively with SQL and NoSQL databases to manage data-driven applications.",
-        "My experience spans various aspects of web development, from designing seamless user experiences to implementing scalable backend systems. I have a deep appreciation for clean code, attention to detail, and building performant, user-centric applications.",
-        "In addition to my technical abilities, I bring a multidisciplinary perspective from my studies in Electrical and Electronics Engineering. I believe this foundation enhances my problem-solving skills and allows me to approach challenges with a unique mindset.",
-        "Outside of development, I enjoy exploring new technologies, traveling the world, playing video games, and engaging in all kinds of sports. Whether it’s climbing, running, or trying out something new, I love staying active and challenging myself both mentally and physically.",
+        "Hello! I am Yavuz Mollahamzaoğlu, a Junior Electrical-Electronics Engineer currently based in Portugal. I graduated in August 2025. My programming journey began at university, where I started learning Python and C++ in 2020. Since then, I have been steadily developing my skills to bridge the gap between hardware and software.",
+        "My work focuses on full-stack development using Angular, React, Node.js, and Prisma. I have contributed to impactful projects, such as the exam preparation platform (ingilizceprep.com). Currently, I work in the IT department at REMAX/WISE, where I support data enrichment and automation processes for their real estate operations (like realestate-lisbon.com).",
+        "Beyond software, I have a solid engineering foundation; I designed a mapping algorithm for a smart vacuum cleaner as my graduation project and conducted government-funded research on sensor-based precision agriculture. Outside of work, I am a true explorer that visited 30 countries and lived in 4, bringing a global perspective and high energy to every team I join.",
+        "Enjoy exploring my journey!",
       ],
       links: {
         resume: "View Full Resume",
@@ -88,6 +87,18 @@ function App() {
       },
       contact: {
         lead: "To reach me, simply fill out the information below and send your message. You can also contact me via WhatsApp at",
+      },
+      projects: {
+        taskManager:
+          "A Jira-style task management application developed during my Huawei internship as a capstone project. Built without using external libraries, it features drag-and-drop functionality, task tracking, and a clean, intuitive interface. Completed in just 2 weeks.",
+        realEstate:
+          "A comprehensive real estate platform developed as part of a government-supported bootcamp program. This project earned me a certificate of completion and showcases my skills in responsive design.",
+        socialApp:
+          "A modern social media platform built with React, featuring real-time updates, user profiles, and interactive content sharing. Demonstrates proficiency in component-based architecture and state management.",
+        ingilizceprep:
+          "A live exam preparation web app built during my internship capstone. Uses React, TypeScript, Node.js, Material UI, and MySQL. The app helps users practice English exams with interactive content and statistics. Live at https://ingilizceprep.com/.",
+        lisbonRealEstate:
+          "Data enrichment and automation for a live property listing website. Implemented web scraping pipelines and workflow automation using Python, Puppeteer, Node.js, n8n, and Make to keep listings fresh and complete.",
       },
     },
     tr: {
@@ -98,8 +109,9 @@ function App() {
         certs: "Sertifikalar",
         contact: "İletişim",
       },
-      subtitle: "Junior Front End Mühendisi",
-      tagline: "Duyarlı ve arka uç destekli projeler geliştiriyorum.",
+      subtitle: "Junior Elektrik-Elektronik Mühendisi",
+      tagline:
+        "Full-stack geliştirme yetkinlikleriyle donanım ve yazılım dünyalarını birleştiriyorum.",
       headings: {
         experience: "Deneyim",
         projects: "Projelerim",
@@ -107,11 +119,10 @@ function App() {
         contact: "İletişim",
       },
       about: [
-        "Yenilikçi tasarımı güçlü mühendislikle birleştirerek duyarlı ve optimize edilmiş dijital deneyimler geliştirmeyi seven bir yazılım geliştiricisiyim. Hem kullanıcı arayüzleri hem de arka uç çözümleri üzerinde çalışıyorum.",
-        "2020’de programlamaya başladığımdan beri Python ve C++ ile algoritmik düşünmeden başlayarak pek çok teknolojiyle çalıştım. Yıllar içinde ön yüz ve arka uç geliştirmeye odaklandım. Angular, React, Prisma, HTML5 ve CSS konularında uzmanlaşırken, SQL ve NoSQL veritabanlarıyla da yoğun şekilde çalıştım.",
-        "Deneyimlerim; sorunsuz kullanıcı deneyimleri tasarlamaktan ölçeklenebilir arka uç sistemleri kurmaya kadar uzanıyor. Temiz koda, detaylara ve performanslı, kullanıcı odaklı uygulamalara önem veriyorum.",
-        "Elektrik-Elektronik mühendisliği eğitimim sayesinde çok disiplinli bir bakış açısına sahibim. Bu altyapının problem çözme yeteneğimi güçlendirdiğine ve zorluklara farklı açılardan yaklaşmamı sağladığına inanıyorum.",
-        "Geliştirme dışında yeni teknolojiler keşfetmek, seyahat etmek, video oyunları oynamak ve çeşitli sporlarla ilgilenmekten hoşlanırım.",
+        "Merhaba! Ben Yavuz Mollahamzaoğlu, şu anda Portekiz'de yaşayan bir Junior Elektrik-Elektronik Mühendisiyim. Ağustos 2025'te mezun oldum. Programlama yolculuğum üniversitede başladı; 2020 yılında Python ve C++ öğrenmeye başladım. O zamandan beri donanım ve yazılım arasındaki köprüyü kurmak için becerilerimi geliştiriyorum.",
+        "Çalışmalarım Angular, React, Node.js ve Prisma kullanarak full-stack geliştirmeye odaklanıyor. ingilizceprep.com gibi projeleri sıfırdan tasarlayıp hayata geçirdim. Şu anda REMAX/WISE'ın IT departmanında çalışıyorum ve gayrimenkul operasyonları (realestate-lisbon.com) için veri zenginleştirme ve otomasyon süreçlerini destekliyorum.",
+        "Yazılımın ötesinde, sağlam bir mühendislik temeline sahibim; mezuniyet projem olarak akıllı süpürge için haritalama algoritması tasarladım ve sensör tabanlı hassas tarım üzerine hükümet destekli araştırma yaptım. İş dışında gerçek bir kaşifim 30 ülke ziyaret ettim ve 4 ülkede yaşadım, katıldığım her ekibe küresel bir bakış açısı ve yüksek enerji getiriyorum.",
+        "Yolculuğumu keşfetmenin tadını çıkarın!",
       ],
       links: {
         resume: "Özgeçmişi Görüntüle",
@@ -120,49 +131,22 @@ function App() {
       contact: {
         lead: "Bana ulaşmak için aşağıdaki bilgileri doldurup mesajınızı gönderebilirsiniz. Ayrıca WhatsApp üzerinden şu numaradan iletişime geçebilirsiniz",
       },
+      projects: {
+        taskManager:
+          "Huawei stajım sırasında bitirme projesi olarak geliştirdiğim Jira tarzı görev yönetim uygulaması. Harici kütüphane kullanmadan sürükle-bırak özelliği, görev takibi ve temiz, sezgisel bir arayüz içeriyor. Sadece 2 haftada tamamladım.",
+        realEstate:
+          "Hükümet destekli bir bootcamp programının parçası olarak geliştirilen kapsamlı gayrimenkul platformu. Bu proje bana bir tamamlama sertifikası kazandırdı ve responsive tasarım üzerine kendimi geliştirmeme yardımcı oldu.",
+        socialApp:
+          "React ile geliştirilmiş modern bir sosyal medya platformu. Gerçek zamanlı güncellemeler, kullanıcı profilleri ve etkileşimli içerik paylaşımı özellikleri bulunuyor. Bileşen tabanlı mimari ve state yönetimindeki yetkinliği gösteriyor.",
+        ingilizceprep:
+          "Staj bitirme projesi kapsamında geliştirilen ve canlıda yayınlanan İngilizce hazırlık uygulaması. React, TypeScript, Node.js, Material UI ve MySQL kullanır. Kullanıcıların İngilizce sınavlarını interaktif içerik ve istatistiklerle çalışmasına yardımcı olucak bir site tasarladım. Canlı: https://ingilizceprep.com/.",
+        lisbonRealEstate:
+          "Canlı bir emlak listeleme sitesi için veri zenginleştirme ve otomasyon geliştirdim. İlanların güncel ve eksiksiz kalması için Python, Puppeteer, Node.js, n8n ve Make ile web scraping akışları ve iş akışı otomasyonları kurdum.",
+      },
     },
   };
   const t = i18n[lang];
   const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    const formData = {
-      user_name: form.current["user_name"].value.trim(),
-      user_email: form.current["user_email"].value.trim(),
-      subject: form.current["subject"].value.trim(),
-      message: form.current["message"].value.trim(),
-    };
-
-    if (
-      !formData.user_name ||
-      !formData.user_email ||
-      !formData.subject ||
-      !formData.message
-    ) {
-      alert("Please fill all the blanks");
-      return;
-    }
-
-    emailjs
-      .sendForm(
-        "service_pt9556p",
-        "template_r6v70ou",
-        form.current,
-        "-dmN0MDvmqMBhT6CW"
-      )
-      .then(
-        () => {
-          alert("Message has been sent successfully");
-          form.current.reset();
-        },
-        (error) => {
-          console.error("Message sending failed:", error.text);
-          alert("Mesaj gönderilirken bir hata oluştu. Lütfen tekrar deneyin.");
-        }
-      );
-  };
 
   return (
     <div className="App scroll-smooth">
@@ -207,7 +191,7 @@ function App() {
               aria-label="Toggle dark mode"
               className="text-white hover:text-teal-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-teal-500"
             >
-              <FontAwesomeIcon icon={theme === "dark" ? faMoon : faSun} />
+              <FontAwesomeIcon icon={theme === "light" ? faMoon : faSun} />
             </button>
             <button
               onClick={toggleLang}
@@ -221,7 +205,6 @@ function App() {
       </nav>
 
       <div className="pt-24 lg:grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto px-4">
-        {/* Sol Kolon - Sticky Profil Kartı */}
         <div className="lg:col-span-1">
           <div className="lg:sticky lg:top-24 flex justify-center">
             <div className="info-card flex flex-col gap-3 hero-left">
@@ -235,7 +218,12 @@ function App() {
 
               <img
                 className="profile-photo"
-                src={process.env.PUBLIC_URL + "/portfoliophoto.jpeg"}
+                src={
+                  process.env.PUBLIC_URL +
+                  (theme === "light"
+                    ? "/light-photo.jpg"
+                    : "/portfoliophoto.jpeg")
+                }
                 alt="Profile"
               />
               <div className="social-media-icons-white gap-10 flex m-auto">
@@ -264,7 +252,7 @@ function App() {
                   <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
                 </a>
                 <a
-                  href="https://letterboxd.com/"
+                  href="https://letterboxd.com/mollahamzaoglu/"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Letterboxd"
@@ -281,133 +269,156 @@ function App() {
           {/* Ben kimim Section */}
           <section id="myself" className="p-4 mb-20">
             <div className="w-full">
-              {t.about.map((para, idx) => (
-                <p
-                  key={idx}
-                  className={`text-white ${
-                    idx === t.about.length - 1 ? "" : "mb-4"
-                  }`}
-                >
-                  {para}
-                </p>
-              ))}
+              <div style={{ marginTop: lang === "tr" ? "75px" : "60px" }}>
+                {t.about.map((para, idx) => (
+                  <p
+                    key={idx}
+                    className={`text-white ${
+                      idx === t.about.length - 1 ? "" : "mb-4"
+                    }`}
+                  >
+                    {para}
+                  </p>
+                ))}
+              </div>
             </div>
           </section>
 
           {/* Experience Section */}
-          <section id="experience" className="flex flex-col gap-4 p-4 mb-20">
+          <section id="experience" className="experience-cards p-4 mb-20">
             <h1 className="text-white font-bold text-3xl text-center mb-4 title">
               {t.headings.experience}
             </h1>
             <a
               href="#experience"
-              className="flex flex-col items-center cursor-auto hover:bg-gray-100 dark:hover:bg-gray-700/40 rounded-lg md:flex-row md:max-w-xl p-2"
-            >
-              <img
-                className="tubitak"
-                src={process.env.PUBLIC_URL + "/alku.png"}
-                alt="ALKU University logo"
-              />
-              <div className="flex flex-col justify-between p-4 leading-normal">
-                <p class="mb-1 text-sm font-medium 	 text-gray-500 dark:text-gray-400">
-                  2024 November - Current
-                </p>
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
-                  Alanya Aladdin Keykubat Universty, IT Asistant
-                </h5>
-                <p class="mb-3 font-normal text-gray-300">
-                  At my university's IT department, I primarily work on
-                  frontend-focused projects and contribute to team efforts. I
-                  mainly use HTML and CSS in my tasks.
-                </p>
-                <div className="flex  ">
-                  <button
-                    type="button"
-                    class="text-white cursor-auto	 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
-                  >
-                    HTML5
-                  </button>
-                  <button
-                    type="button"
-                    class="text-white cursor-auto	 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
-                  >
-                    CSS
-                  </button>
-                  <button
-                    type="button"
-                    class="text-white cursor-auto	 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
-                  >
-                    ReactJs
-                  </button>
-                </div>
-              </div>
-            </a>
-            <a
-              href="#experience"
-              className="flex flex-col items-center hover:bg-gray-100 dark:hover:bg-gray-700/40 cursor-auto rounded-lg md:flex-row md:max-w-xl p-2"
+              className="flex flex-row items-center cursor-auto hover:bg-blue-100 dark:hover:bg-gray-700/40 rounded-lg w-full p-2 transition-colors"
             >
               <img
                 className="tubitak object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                style={{
+                  maxWidth: "220px",
+                  maxHeight: "220px",
+                  width: "100%",
+                  height: "auto",
+                }}
                 src={process.env.PUBLIC_URL + "/huawei3.png"}
                 alt="Huawei logo"
               />
-              <div className="flex flex-col justify-between p-4 leading-normal ">
+              <div className="flex-1 flex flex-col justify-between p-4 leading-normal max-w-3xl w-full ">
                 <p class="mb-1 text-sm font-medium text-gray-500 dark:text-gray-400">
-                  2024 July - 2024 August
+                  {lang === "en"
+                    ? "2024 July - 2024 August"
+                    : "2024 Temmuz - 2024 Ağustos"}
                 </p>
                 <h5 class="mb-2 text-2xl font-bold tracking-tight  text-white">
-                  Huawei, Front End Engineer Intership
+                  {lang === "en"
+                    ? "Huawei, Front-End Developer (Summer Internship, Hybrid)"
+                    : "Huawei, Front-End Developer (Yaz Stajı, Hibrit)"}
                 </h5>
                 <p class="mb-3 font-normal text-gray-300">
-                  During my summer internship at Huawei, I focused on front-end
-                  development with a strong emphasis on AngularJS. I gained
-                  hands-on experience in building dynamic web applications,
-                  working extensively with AngularJS. Additionally, I acquired
-                  foundational knowledge in backend development, allowing me to
-                  integrate and manage data more effectively in my projects and
-                  successfully submitted my final work under the mentorship of
-                  Cihat Haktanir.
+                  {lang === "en"
+                    ? "During my summer internship at Huawei, I focused on front-end development with a strong emphasis on AngularJS. I gained hands-on experience in building dynamic web applications, working extensively with AngularJS. Additionally, I acquired foundational knowledge in backend development, allowing me to integrate and manage data more effectively in my projects and successfully submitted my final work under the mentorship of Cihat Haktanir."
+                    : "Huawei'deki yaz stajımda, ağırlıklı olarak AngularJS ile ön yüz geliştirme üzerine çalıştım. Dinamik web uygulamaları geliştirme konusunda pratik deneyim kazandım. Ayrıca, arka uç geliştirme konusunda temel bilgiler edindim ve projelerimde veriyi daha etkili yönetebildim. Staj sonunda, Cihat Haktanır'ın mentörlüğünde final projemi başarıyla teslim ettim."}
                 </p>
-                <div className="flex ">
+                <div className="flex justify-center flex-wrap gap-2">
                   <button
                     type="button"
-                    class="text-white bg-gradient-to-r cursor-auto	 from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
+                    class="text-white bg-gradient-to-r cursor-auto\t from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
                   >
                     AngularJs
                   </button>
                   <button
                     type="button"
-                    class="text-white bg-gradient-to-r cursor-auto	 from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
+                    class="text-white bg-gradient-to-r cursor-auto\t from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
                   >
                     HTML5
                   </button>
 
                   <button
                     type="button"
-                    class="text-white bg-gradient-to-r cursor-auto	 from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
+                    class="text-white bg-gradient-to-r cursor-auto\t from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
                   >
                     PrismaJs
                   </button>
                   <button
                     type="button"
-                    class="text-white bg-gradient-to-r cursor-auto	 from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
+                    class="text-white bg-gradient-to-r cursor-auto\t from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
                   >
                     NodeJs
                   </button>
                 </div>
               </div>
             </a>
+            <a
+              href="#experience"
+              className="flex flex-row items-center cursor-auto hover:bg-blue-100 dark:hover:bg-gray-700/40 rounded-lg w-full p-2 transition-colors"
+            >
+              <img
+                className="tubitak"
+                src={process.env.PUBLIC_URL + "/alku.png"}
+                alt="ALKU University logo"
+              />
+              <div className="flex-1 flex flex-col justify-between p-4 leading-normal max-w-3xl w-full">
+                <p class="mb-1 text-sm font-medium \t text-gray-500 dark:text-gray-400">
+                  {lang === "en"
+                    ? "2024 November - 2025 May"
+                    : "2024 Kasım - 2025 Mayıs"}
+                </p>
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
+                  {lang === "en"
+                    ? "Alanya Aladdin Keykubat University, IT Assistant (Part Time, On office)"
+                    : "Alanya Alaaddin Keykubat Üniversitesi, IT Asistanı (Yarı Zamanlı, Ofiste)"}
+                </h5>
+                <p class="mb-3 font-normal text-gray-300">
+                  {lang === "en"
+                    ? "At my university's IT department, I primarily worked on frontend-focused projects and contributed to team efforts. I mainly used HTML and CSS in my tasks. Additionally, I performed maintenance work and regularly participated in meetings and idea exchanges with colleagues."
+                    : "Üniversitemin IT departmanında ağırlıklı olarak frontend projelerinde çalıştım ve ekip işlerine katkı sağladım. Görevlerimde çoğunlukla HTML ve CSS kullandım. Ayrıca bakım işleri yaptım ve ekip arkadaşlarımla toplantılara katılarak fikir alışverişinde bulundum."}
+                </p>
+                <div className="flex justify-center flex-wrap gap-2">
+                  <button
+                    type="button"
+                    class="text-white cursor-auto bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center mb-2"
+                  >
+                    HTML5
+                  </button>
+                  <button
+                    type="button"
+                    class="text-white cursor-auto bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center mb-2"
+                  >
+                    CSS
+                  </button>
+                  <button
+                    type="button"
+                    class="text-white cursor-auto bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center mb-2"
+                  >
+                    ReactJs
+                  </button>
+                  <button
+                    type="button"
+                    class="text-white cursor-auto bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center mb-2"
+                  >
+                    Maintance
+                  </button>
+                  <button
+                    type="button"
+                    class="text-white cursor-auto bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center mb-2"
+                  >
+                    Tailwind
+                  </button>
+                </div>
+              </div>
+            </a>
 
             <a
               href="#experience"
-              className="flex flex-col items-center cursor-auto hover:bg-gray-100 dark:hover:bg-gray-700/40 rounded-lg md:flex-row md:max-w-xl p-2"
+              className="flex flex-row items-center cursor-auto hover:bg-blue-100 dark:hover:bg-gray-700/40 rounded-lg w-full p-2 transition-colors"
             >
               <img
                 className="tubitak object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
                 src={process.env.PUBLIC_URL + "/tubitaklogo.png"}
                 alt="TÜBİTAK logo"
               />
-              <div className="flex flex-col justify-between p-4 leading-normal">
+              <div className="flex-1 flex flex-col justify-between p-4 leading-normal max-w-3xl w-full">
                 <p class="mb-1 text-sm font-medium text-gray-500 dark:text-gray-400">
                   2022 November - 2024 November
                 </p>
@@ -447,26 +458,122 @@ function App() {
               </div>
             </a>
             <a
-              className="text-white flex justify-center sm:justify-start hover:text-teal-300 font-medium items-baseline"
-              href="https://github.com/YavuzMollahamzaoglu"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="View full resume on GitHub"
+              href="#experience"
+              className="flex flex-row items-center cursor-auto hover:bg-blue-100 dark:hover:bg-gray-700/40 rounded-lg w-full p-2 transition-colors"
             >
-              <span> View Full Resume </span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="inline-block icon h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
+              <img
+                className="tubitak object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                src={process.env.PUBLIC_URL + "/salixus-logo.png"}
+                alt="Salixus Technology logo"
+              />
+              <div className="flex-1 flex flex-col justify-between p-4 leading-normal max-w-3xl w-full">
+                <p class="mb-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+                  {lang === "en"
+                    ? "2025 August - 2025 September"
+                    : "2025 Ağustos - 2025 Eylül"}
+                </p>
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
+                  {lang === "en"
+                    ? "Software Developer (Summer Internship, On office)"
+                    : "Yazılım Geliştirici (Yaz Stajı, Ofiste)"}
+                </h5>
+                <p class="mb-3 font-normal text-gray-300">
+                  {lang === "en"
+                    ? "During this internship, I developed an interactive Erasmus exam preparation platform using React, Tailwind CSS, Prisma.js, and MySQL. I gained hands-on experience in full-stack development, database modeling, and user-centered design. I graduated upon completion of this internship. (ingilizceprep.com)"
+                    : "Bu stajda React, Tailwind CSS, Prisma.js ve MySQL kullanarak interaktif bir Erasmus sınav hazırlık platformu geliştirdim. Full-stack geliştirme, veritabanı modelleme ve kullanıcı odaklı tasarımda pratik deneyim kazandım. Bu stajı tamamlayarak mezun oldum. (ingilizceprep.com)"}
+                </p>
+                <div className="flex">
+                  <button
+                    type="button"
+                    class="text-white bg-gradient-to-r cursor-auto from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
+                  >
+                    React
+                  </button>
+                  <button
+                    type="button"
+                    class="text-white bg-gradient-to-r cursor-auto from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
+                  >
+                    Tailwind CSS
+                  </button>
+                  <button
+                    type="button"
+                    class="text-white bg-gradient-to-r cursor-auto from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
+                  >
+                    Prisma.js
+                  </button>
+                  <button
+                    type="button"
+                    class="text-white bg-gradient-to-r cursor-auto from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
+                  >
+                    MySQL
+                  </button>
+                </div>
+              </div>
+            </a>
+            <a
+              href="#experience"
+              className="flex flex-row items-center cursor-auto hover:bg-blue-100 dark:hover:bg-gray-700/40 rounded-lg w-full p-2 transition-colors"
+            >
+              <img
+                className="tubitak object-cover w-full rounded-t-lg h-80 md:h-auto md:w-56 md:rounded-none md:rounded-s-lg"
+                style={{
+                  maxWidth: "180px",
+                  maxHeight: "180px",
+                  width: "100%",
+                  height: "auto",
+                }}
+                src={process.env.PUBLIC_URL + "/remax-logo.png"}
+                alt="REMAX logo"
+              />
+              <div className="flex-1 flex flex-col justify-between p-4 leading-normal max-w-3xl w-full">
+                <p class="mb-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+                  {lang === "en"
+                    ? "2025 October - Current"
+                    : "2025 Ekim - Şu an"}
+                </p>
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
+                  {lang === "en"
+                    ? "REMAX/WISE, IT & Automation Specialist (Full Time, On office)"
+                    : "REMAX/WISE, IT & Otomasyon Uzmanı (Tam Zamanlı, Ofiste)"}
+                </h5>
+                <p class="mb-3 font-normal text-gray-300">
+                  {lang === "en"
+                    ? "Built automated data enrichment pipelines for Portuguese real estate companies using Node.js, Puppeteer, and Make. Developed multi-source scraping solutions for LinkedIn and Idealista. Designed and deployed static web apps with Supabase backend and Vercel hosting."
+                    : "Portekiz'deki emlak şirketleri için Node.js, Puppeteer ve Make ile otomatik veri zenginleştirme akışları kurdum. LinkedIn ve Idealista için çoklu kaynaklardan veri çekme çözümleri geliştirdim. Supabase ve Vercel ile tam özellikli, duyarlı web uygulamaları tasarladım ve yayına aldım."}
+                </p>
+                <div className="flex justify-center flex-wrap gap-2">
+                  <button
+                    type="button"
+                    class="text-white bg-gradient-to-r cursor-auto from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center mb-2"
+                  >
+                    n8n
+                  </button>
+                  <button
+                    type="button"
+                    class="text-white bg-gradient-to-r cursor-auto from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center mb-2"
+                  >
+                    Automation
+                  </button>
+                  <button
+                    type="button"
+                    class="text-white bg-gradient-to-r cursor-auto from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center mb-2"
+                  >
+                    Data Enrichment
+                  </button>
+                  <button
+                    type="button"
+                    class="text-white bg-gradient-to-r cursor-auto from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center mb-2"
+                  >
+                    NodeJs
+                  </button>
+                  <button
+                    type="button"
+                    class="text-white bg-gradient-to-r cursor-auto from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center mb-2"
+                  >
+                    Python
+                  </button>
+                </div>
+              </div>
             </a>
           </section>
 
@@ -477,7 +584,7 @@ function App() {
             </h1>
             <a
               href="#projects"
-              className="flex flex-col items-center cursor-auto hover:bg-gray-100 dark:hover:bg-gray-700/40 rounded-lg md:flex-row md:max-w-xl p-2"
+              className="flex flex-row items-center cursor-auto hover:bg-blue-100 dark:hover:bg-gray-700/40 rounded-lg w-full p-2 transition-colors"
             >
               <img
                 className="project-image object-cover w-full rounded-xl h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
@@ -489,8 +596,7 @@ function App() {
                   Task Manager App
                 </h5>
                 <p class="mb-3 font-normal text-gray-300">
-                  I made this project as my Huawei internship finish projects
-                  and create it in a short time like 2 week.
+                  {t.projects.taskManager}
                 </p>
                 <div className="flex justify-center">
                   <button
@@ -503,7 +609,7 @@ function App() {
                     type="button"
                     class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
                   >
-                    Angular Material
+                    NodeJs
                   </button>
                   <button
                     type="button"
@@ -522,7 +628,7 @@ function App() {
             </a>
             <a
               href="#projects"
-              className="flex flex-col items-center cursor-auto hover:bg-gray-100 dark:hover:bg-gray-700/40 rounded-lg md:flex-row md:max-w-xl p-2"
+              className="flex flex-row items-center cursor-auto hover:bg-blue-100 dark:hover:bg-gray-700/40 rounded-lg w-full p-2 transition-colors"
             >
               <img
                 className="project-image object-cover w-full rounded-xl justify-left h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
@@ -534,9 +640,7 @@ function App() {
                   Real Estate App
                 </h5>
                 <p class="mb-3 font-normal text-gray-300">
-                  Collaborated on a real estate project focusing on UI/UX
-                  design, using HTML, CSS, and Bootstrap. Emphasized SEO best
-                  practices to optimize project visibility and performance.
+                  {t.projects.realEstate}
                 </p>
                 <div className="flex justify-center">
                   <button
@@ -561,54 +665,114 @@ function App() {
                     type="button"
                     class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
                   >
-                    SEO
+                    Git
                   </button>
                 </div>
               </div>
             </a>
             <a
               href="#projects"
-              className="flex flex-col items-center cursor-auto hover:bg-gray-100 dark:hover:bg-gray-700/40 rounded-lg md:flex-row md:max-w-xl p-2"
+              className="flex flex-row items-center cursor-auto hover:bg-blue-100 dark:hover:bg-gray-700/40 rounded-lg w-full p-2 transition-colors"
             >
               <img
                 className="project-image object-cover w-full rounded-xl h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-                src={process.env.PUBLIC_URL + "/social-app.jpeg"}
-                alt="Social App UI screenshot"
+                src={process.env.PUBLIC_URL + "/lisbon-real-estate.jpg"}
+                alt="Lisbon Real Estate project"
               />
               <div className="flex flex-col justify-between p-4 leading-normal">
                 <h5 className="mb-2 text-xl tracking-tight hover:text-teal-300 text-white">
-                  Social App
+                  Lisbon Real Estate
                 </h5>
                 <p class="mb-3 font-normal text-gray-300">
-                  UI/UX for a social app can demonstrate your skills in user
-                  interface design, user experience optimization, and
-                  prototyping.
+                  {t.projects.lisbonRealEstate}
                 </p>
-                <div className="flex justify-center">
+                <div className="flex justify-center flex-wrap gap-2">
                   <button
                     type="button"
-                    class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
+                    class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center mb-2"
                   >
-                    ReactJs
+                    Python
                   </button>
                   <button
                     type="button"
-                    class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
+                    class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center mb-2"
+                  >
+                    Puppeteer
+                  </button>
+                  <button
+                    type="button"
+                    class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center mb-2"
+                  >
+                    Node.js
+                  </button>
+                  <button
+                    type="button"
+                    class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center mb-2"
+                  >
+                    n8n
+                  </button>
+                  <button
+                    type="button"
+                    class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center mb-2"
+                  >
+                    Make
+                  </button>
+                </div>
+              </div>
+            </a>
+            <a
+              href="#projects"
+              className="flex flex-row items-center cursor-auto hover:bg-blue-100 dark:hover:bg-gray-700/40 rounded-lg w-full p-2 transition-colors"
+            >
+              <img
+                className="project-image object-cover w-full rounded-xl h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                src={process.env.PUBLIC_URL + "/ingilizceprep.jpg"}
+                alt="Ingilizce Hazirlik App screenshot"
+              />
+              <div className="flex flex-col justify-between p-4 leading-normal">
+                <h5 className="mb-2 text-xl tracking-tight hover:text-teal-300 text-white break-words">
+                  İngilizce Hazırlık App
+                </h5>
+                <p className="mb-3 font-normal text-gray-300 break-words whitespace-pre-line">
+                  {t.projects.ingilizceprep}
+                </p>
+                <div className="flex flex-wrap justify-center gap-2">
+                  <button
+                    type="button"
+                    className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center mb-2 cursor-default pointer-events-none"
+                  >
+                    React
+                  </button>
+                  <button
+                    type="button"
+                    className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center mb-2"
+                  >
+                    TypeScript
+                  </button>
+                  <button
+                    type="button"
+                    className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center mb-2"
+                  >
+                    Node.js
+                  </button>
+                  <button
+                    type="button"
+                    className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center mb-2"
                   >
                     Material UI
                   </button>
                   <button
                     type="button"
-                    class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
+                    className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center mb-2"
                   >
-                    ReactDOM
+                    MySQL
                   </button>
                 </div>
               </div>
             </a>
             <a
               href="#projects"
-              className="flex flex-col items-center cursor-auto hover:bg-gray-100 dark:hover:bg-gray-700/40 rounded-lg md:flex-row md:max-w-xl p-2 mb-2"
+              className="flex flex-row items-center cursor-auto hover:bg-blue-100 dark:hover:bg-gray-700/40 rounded-lg w-full p-2 mb-2 transition-colors"
             >
               <img
                 className="project-image object-cover w-full rounded-xl h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
@@ -617,61 +781,46 @@ function App() {
               />
               <div className="flex flex-col justify-between p-4 leading-normal">
                 <h5 className="mb-2 text-xl tracking-tight hover:text-teal-300 text-white">
-                  Universty Automation
+                  University Automation
                 </h5>
-                <p class="mb-3 font-normal text-gray-300">
-                  Here are the biggest enterprise technology acquisitions of
-                  2021 so far, in reverse chronological order.
+                <p className="mb-3 font-normal text-gray-300">
+                  {lang === "en"
+                    ? "I created a general university automation system as my first MySQL project, where I learned the basics of relational databases and MySQL usage. The backend was built with Express.js and Prisma, and the project features a full-stack architecture."
+                    : "İlk MySQL projem olarak genel bir üniversite otomasyon sistemi geliştirdim. Bu projede ilişkisel veritabanı ve MySQL kullanımını öğrendim. Backend kısmında Express.js ve Prisma kullandım, proje tam kapsamlı bir full-stack mimariye sahip."}
                 </p>
-                <div className="flex justify-center">
+                <div className="flex flex-wrap justify-center gap-2">
                   <button
                     type="button"
-                    class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
+                    className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center mb-2"
                   >
                     PrismaJs
                   </button>
                   <button
                     type="button"
-                    class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
+                    className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center mb-2"
                   >
                     ReactJs
                   </button>
                   <button
                     type="button"
-                    class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
+                    className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center mb-2"
                   >
                     MySQL
                   </button>
                   <button
                     type="button"
-                    class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center me-2 mb-2"
+                    className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center mb-2"
                   >
                     ExpressJs
                   </button>
+                  <button
+                    type="button"
+                    className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-full text-xs px-4 py-1.5 text-center mb-2"
+                  >
+                    Backend
+                  </button>
                 </div>
               </div>
-            </a>
-            <a
-              className="hover:text-teal-300 font-medium items-baseline text-white"
-              href="https://github.com/YavuzMollahamzaoglu?tab=repositories"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="View my GitHub repositories"
-            >
-              <span> View My GitHub Repositorys </span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
             </a>
           </section>
 
@@ -689,6 +838,39 @@ function App() {
                 modules={[Pagination, Navigation]}
                 className="mySwiper p-2 "
               >
+                <SwiperSlide>
+                  <img
+                    className="slider-image "
+                    src={process.env.PUBLIC_URL + "/certificate/sql-badi.jpg"}
+                    alt="Certificate: SQL Badi"
+                  />
+                  <span className="flex justify-center text-white mt-2">
+                    SQL Badi
+                  </span>
+                  <span className="flex justify-center text-center text-white mt-2">
+                    {lang === "en"
+                      ? "SQL fundamentals, queries, relational database design."
+                      : "SQL fundamentals, sorgular, relational database design."}
+                  </span>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    className="slider-image "
+                    src={
+                      process.env.PUBLIC_URL +
+                      "/certificate/cloud_coderspace.jpg"
+                    }
+                    alt="Certificate: Cloud Coderspace"
+                  />
+                  <span className="flex justify-center text-white mt-2">
+                    Cloud Coderspace
+                  </span>
+                  <span className="flex justify-center text-center text-white mt-2">
+                    {lang === "en"
+                      ? "Cloud computing, deployment, scalable infrastructure."
+                      : "Cloud computing, deployment, scalable infrastructure."}
+                  </span>
+                </SwiperSlide>
                 <SwiperSlide>
                   <img
                     className="slider-image "
@@ -827,105 +1009,52 @@ function App() {
             </div>
           </section>
 
-          {/* Contact Section */}
+          {/* Contact Section (Static info) */}
           <section id="contact-me" className="p-4 mb-20">
             <div class="py-2 lg:py-2 px-4 mx-auto w-full contact-me">
-                <h2 className="mb-4 tracking-tight font-bold text-3xl text-center text-white title">
-                  {t.headings.contact}
-                </h2>
-                <p className="mb-8 lg:mb-16 font-light text-center text-gray-300 sm:text-xl">
-                  {t.contact.lead}
-                  <a
-                    className="inline-block ml-1 font-medium text-sky-400 hover:text-teal-300 focus:outline-none focus:ring-2 focus:ring-sky-500 rounded"
-                    href="tel:+905374639725"
-                    aria-label="Call me on WhatsApp"
-                  >
-                    +90 537 463 97 25
-                  </a>
-                  .
-                </p>
-                <span> {t.links.resume} </span>
-                <span> {t.links.repos} </span>
-
-                <form ref={form} onSubmit={sendEmail} class="space-y-8">
-                  <div>
-                    <label
-                      for="user_name"
-                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                    >
-                      Your name
-                    </label>
-                    <input
-                      type="text"
-                      name="user_name"
-                      id="user_name"
-                      placeholder="Alan Turing"
-                      class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                      required
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      for="user_email"
-                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                    >
-                      Your email
-                    </label>
-                    <input
-                      type="email"
-                      name="user_email"
-                      placeholder="alanturingk@gmail.com"
-                      id="user_email"
-                      class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                      required
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      for="subject"
-                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                    >
-                      Subject
-                    </label>
-                    <input
-                      type="text"
-                      name="subject"
-                      id="subject"
-                      class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                      placeholder=""
-                      required
-                    />
-                  </div>
-
-                  <div class="sm:col-span-2">
-                    <label
-                      for="message"
-                      class="block mb-2 text-sm font-medium text-gray-300"
-                    >
-                      Your message
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows="6"
-                      class="block p-2.5 w-full text-sm text-gray-300 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                      placeholder="Enter your message"
-                      required
-                    ></textarea>
-                  </div>
-
-                  <div class="flex justify-center">
-                    <button
-                      type="submit"
-                      className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg sm:w-fit focus:ring-4 focus:outline-none bg-gray-700 hover:bg-gray-500"
-                    >
-                      Send
-                    </button>
-                  </div>
-                </form>
+              <h2 className="mb-4 tracking-tight font-bold text-3xl text-center text-white title">
+                {t.headings.contact}
+              </h2>
+              <div className="mb-8 lg:mb-16 font-light text-center text-gray-300 sm:text-xl">
+                {lang === "en"
+                  ? "You can reach me via the channels below."
+                  : "Aşağıdaki kanallar üzerinden bana ulaşabilirsiniz."}
               </div>
+
+              <div className="max-w-2xl mx-auto grid gap-4">
+                <a
+                  href="mailto:yavuzmollahamzaoglu@gmail.com"
+                  className="block p-4 rounded-lg bg-white border border-gray-300 shadow-md text-gray-900 hover:bg-gray-100 transition-colors"
+                >
+                  <strong className="block">Email</strong>
+                  <span>yavuzmollahamzaoglu@gmail.com</span>
+                </a>
+                <a
+                  href="https://wa.me/905374639725"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block p-4 rounded-lg bg-white border border-gray-300 shadow-md text-gray-900 hover:bg-gray-100 transition-colors"
+                >
+                  <strong className="block">WhatsApp</strong>
+                  <span>+90 537 463 97 25</span>
+                </a>
+                <div className="block p-4 rounded-lg bg-white border border-gray-300 shadow-md text-gray-900">
+                  <strong className="block">
+                    {lang === "tr" ? "Lokasyon" : "Location"}
+                  </strong>
+                  <span>Barcanera Rua Egas Moniz 4, Lisbon, Portugal</span>
+                </div>
+                <a
+                  href="https://www.linkedin.com/in/yavuz-mollahamzaoğlu-59a2531b9"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block p-4 rounded-lg bg-white border border-gray-300 shadow-md text-gray-900 hover:bg-gray-100 transition-colors"
+                >
+                  <strong className="block">LinkedIn</strong>
+                  <span>yavuz-mollahamzaoğlu-59a2531b9</span>
+                </a>
+              </div>
+            </div>
           </section>
         </div>
       </div>
